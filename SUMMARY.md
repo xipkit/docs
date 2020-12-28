@@ -3,17 +3,23 @@
 * [Intro](README.md)
 * [Getting Started](getting-started.md)
 * [Basics](basics.md)
-* [Dev Environment](dev-environment.md)
+* [Dev Environment](dev-environment/README.md)
+  * [Hot-Code Reloading](dev-environment/hot-code-reloading.md)
+  * [Procfile](dev-environment/procfile.md)
+  * [Tunnels](dev-environment/tunnels.md)
+  * [Environment Variables](dev-environment/environment-variables.md)
+  * [Logs](dev-environment/logs.md)
 
 ## Flows
 
-* [Overview](flows/overview.md)
+* [Flow Overview](flows/overview.md)
 * [State Naming](flows/state-naming.md)
 * [FlowMap](flows/flowmap.md)
 * [State Options](flows/state-options.md)
 
 ## Controllers
 
+* [Controller Overview](controllers/controller-overview.md)
 * [Sessions](controllers/sessions/README.md)
   * [Intro](controllers/sessions/intro.md)
   * [step\_to](controllers/sessions/step_to.md)
@@ -25,6 +31,7 @@
 * [handle\_message](controllers/handle_message/README.md)
   * [Exact Match](controllers/handle_message/exact-match.md)
   * [Alpha Ordinals](controllers/handle_message/alpha-ordinals.md)
+  * [Homophone Detection](controllers/handle_message/homophone-detection.md)
   * [NLP/NLU](controllers/handle_message/nlp-nlu.md)
   * [Regex](controllers/handle_message/regex.md)
   * [Nil Matcher](controllers/handle_message/nil-matcher.md)
@@ -40,6 +47,7 @@
 
 ## Replies
 
+* [Reply Overview](replies/reply-overview.md)
 * [YAML Replies](replies/yaml-replies.md)
 * [ERB](replies/erb.md)
 * [Delays](replies/delays.md)
@@ -48,13 +56,13 @@
 
 ## Models
 
-* [Overview](models/overview.md)
+* [Model Overview](models/overview.md)
 * [ActiveRecord](models/activerecord.md)
 * [Mongoid](models/mongoid.md)
 
 ## Platforms
 
-* [Overview](platforms/overview.md)
+* [Platform Overview](platforms/overview.md)
 * [Facebook Messenger](platforms/facebook-messenger.md)
 * [SMS/Whatsapp](platforms/sms-whatsapp.md)
 * [Alexa Skills](platforms/alexa-skills.md)
@@ -62,7 +70,7 @@
 
 ## NLP/NLU
 
-* [Overview](nlp-nlu/overview.md)
+* [NLP Overview](nlp-nlu/overview.md)
 * [Microsoft LUIS](nlp-nlu/microsoft-luis.md)
 * [OpenAI](nlp-nlu/openai.md)
 
@@ -77,6 +85,6 @@
 
 ## Deployment
 
-* [Overview](deployment/overview.md)
+* [Deployment Overview](deployment/overview.md)
 * [Heroku](deployment/heroku.md)
 

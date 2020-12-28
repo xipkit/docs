@@ -15,16 +15,16 @@ Xip Kit \(or just Xip\) is an open source, Ruby framework for conversational voi
 
 Xip is inspired by the Model-View-Controller \(MVC\) pattern. However, instead of calling them _Views,_ Xip refers to them as _Replies_ to better match the chatbot domain.
 
-* The [Model](https://hellostealth.org/docs/#models) layer represents your data model \(such as Account, User, Quote, etc.\) and encapsulates the business logic that is specific to your bot. By default, Xip uses [ActiveRecord](https://hellostealth.org/docs/#models.active_record), but you can use any library that you prefer.
-* The [Controller](https://hellostealth.org/docs/#controllers) layer is responsible for handling incoming requests from messaging platforms and providing and transmitting the response \(reply\).
-* The [Reply](https://hellostealth.org/docs/#replies) layer is composed of “templates” that are responsible for constructing the respective response.
+* The [Model](models/overview.md) layer represents your data model \(such as Account, User, Quote, etc.\) and encapsulates the business logic that is specific to your bot. By default, Xip uses [ActiveRecord](models/activerecord.md), but you can use any library that you prefer.
+* The [Controller](controllers/controller-overview.md) layer is responsible for handling incoming requests from messaging platforms and providing and transmitting the response \(reply\).
+* The [Reply](replies/reply-overview.md) layer is composed of “templates” that are responsible for constructing the respective response.
 
 In addition to being inspired by Model-View-Controller \(MVC\) pattern, Xip as a few other awesome things built in for you.
 
-* **Plug and play components.** Every service integration in Xip is a Ruby gem. One bot can support multiple [me](https://hellostealth.org/docs/#messaging_integrations)ssaging platforms \(i.e. Facebook Messenger, SMS, Alexa, and more\) and multiple NLP/NLU services.
-* **Innovative.** Xip is constantly improving and evolving. There are many innovations in Xip such as: interrupt detection, homophone detection, hot-code reloading, multi-level catch-all handling, and more that make your bots perform better.
+* **Plug and play components.** Every service integration in Xip is a Ruby gem. One bot can support multiple [messaging platforms](platforms/overview.md) \(i.e. Facebook Messenger, SMS, Alexa, and more\) and multiple NLP/NLU services.
+* **Innovative.** Xip is constantly improving and evolving. There are many innovations in Xip such as: [interrupt detection](controllers/interrupt-detection.md), [homophone detection](controllers/handle_message/homophone-detection.md), [hot-code reloading](dev-environment/hot-code-reloading.md), [multi-level catch-all handling](controllers/catch-alls.md), and more that make your bots perform better.
 * **Advanced tooling.** From web servers to continuous integration testing, Xip is built to take advantage of all the great work done by the web development community.
-* **Hosting you trust.** Xip bots are Rack applications. That means your bots can be [deployed](https://hellostealth.org/docs/#deployment) using familiar services like Docker and Heroku.
+* **Hosting you trust.** Xip bots are Rack applications. That means your bots can be [deployed](deployment/overview.md) using familiar services like Docker and Heroku.
 * **Ready for production.** Xip already powers bots for large, well-known brands. You can rest assured your bot will be in good hands with Xip.
 * **Open source.** Xip Kit is MIT licensed to ensure you own your bot's source code. More importantly, we welcome contributors to help make Xip even better for everyone.
 
