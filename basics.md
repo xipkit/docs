@@ -12,6 +12,10 @@ A Xip bot has two primary processes: a _web server_, and a _background job proce
 
 Xip requires Redis. Redis is used for [session storage](controllers/sessions/intro.md) as well as the queue for background jobs. You can access the Redis store yourself via the global variable: `$redis`. You can use it as your primary data store if you are building a simple bot, but you'll likely want to use a SQL or NoSQL database for more complex bots.
 
+### Environments
+
+Xip bots can be booted into three environment types: `development`, `testing`, `production`. By default, if an environment is not specified via the `XIP_ENV` environment variable, the `development` environment will be used. The `testing` environment is automatically used when running your specs.
+
 ## Lifecycle of a Message
 
 This is just a brief outline of the lifecycle of a message to help you understand how Xip processes messages. For more detailed information that you can use to build your own message platform components, check out [those docs](components/message-platforms.md).
