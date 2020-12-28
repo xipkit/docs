@@ -4,6 +4,7 @@
 * [Getting Started](getting-started.md)
 * [Basics](basics.md)
 * [Dev Environment](dev-environment/README.md)
+  * [Booting Up](dev-environment/booting-up.md)
   * [Hot-Code Reloading](dev-environment/hot-code-reloading.md)
   * [Procfile](dev-environment/procfile.md)
   * [Tunnels](dev-environment/tunnels.md)
@@ -22,7 +23,7 @@
 
 * [Controller Overview](controllers/controller-overview.md)
 * [Sessions](controllers/sessions/README.md)
-  * [Intro](controllers/sessions/intro.md)
+  * [Session Overview](controllers/sessions/intro.md)
   * [step\_to](controllers/sessions/step_to.md)
   * [step\_to\_in](controllers/sessions/step_to_in.md)
   * [step\_to\_at](controllers/sessions/step_to_at.md)

@@ -6,7 +6,21 @@ description: A quick primer of the various pieces that comprise Xip Kit.
 
 ## Anatomy of a Xip Bot
 
-## Life of an Incoming Message
+A Xip bot has two primary processes: a _web server_, and a _background job processer_. If the messaging platform being used supports it, Xip will push a message to a queue where a reply will be constructured by a background job. This allows you to easily scale your Xip bot across many threads and processes.
+
+### Data Store
+
+Xip requires Redis. Redis is used for [session storage](controllers/sessions/intro.md) as well as the queue for background jobs. You can access the Redis store yourself via the global variable: `$redis`. You can use it as your primary data store if you are building a simple bot, but you'll likely want to use a SQL or NoSQL database for more complex bots.
+
+## Lifecycle of a Message
+
+This is just a brief outline of the lifecycle of a message to help you understand how Xip processes messages. For more detailed information that you can use to build your own message platform components, check out [those docs](components/message-platforms.md).
+
+1. A message is received by the web server.
+2. If the message platform supports it, the message is backgrounded to be processed by a background job. If the message platform does not support it \([Alexa Skill](platforms/alexa-skills.md) or [Voice](platforms/voice.md)\), the message is processed inline by the web server process.
+3. Xip uses the respective message platform component to normalize the message into a standard format.
+4. Xip calls the [route](controllers/route.md) method in `BotController`. If a session exists for the user, they are routed to their current state. If a session does not exist, by default the `route` method will route the user to the `HellosController#say_hello` method.
+5. The controller action will either do nothing, step to another state, update the session, or generate a reply. In the latter case, the reply will be delivered via the message platform component.
 
 ## Directory Structure
 
