@@ -88,3 +88,8 @@
 * [Deployment Overview](deployment/overview.md)
 * [Heroku](deployment/heroku.md)
 
+## Components
+
+* [Message Platforms](components/message-platforms.md)
+* [NLP](components/nlp.md)
+
