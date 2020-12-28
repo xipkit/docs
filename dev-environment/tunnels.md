@@ -1,6 +1,6 @@
 # Tunnels
 
-When developing locally, message platforms require access to the Xip server running on your machine in order to transmit user messages. Typically they will give you a URL you can use to configure your endpoint with the message platform.
+When developing locally, message platforms require access to the Xip server running on your machine in order to transmit user messages. 
 
 Here are some options you can use:
 
