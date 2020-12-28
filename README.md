@@ -30,7 +30,7 @@ In addition to being inspired by Model-View-Controller \(MVC\) pattern, Xip as a
 
 ## Prerequisites
 
-While it's helpful to have some familiarity with Ruby, we think you can get started with Xip without yet knowing Ruby. Building text-based bots or Alexa Skills is a great starting point into the world of programming and we think Ruby is an excellent first \(or last!\) programming language.
+While it's helpful to have some familiarity with Ruby, we think you can get started with Xip without yet knowing Ruby or even programming. Building text-based bots or Alexa Skills is a great starting point into the world of programming and we think Ruby is an excellent first \(or last!\) programming language.
 
 We welcome contributors and questions from programmers of all experience levels.
 
