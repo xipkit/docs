@@ -24,6 +24,6 @@ In addition to being inspired by Model-View-Controller \(MVC\) pattern, Xip as a
 * **Innovative.** Xip is constantly improving and evolving. There are many innovations in Xip such as: interrupt detection, homophone detection, hot-code reloading, multi-level catch-all handling, and more that make your bots perform better.
 * **Advanced tooling.** From web servers to continuous integration testing, Xip is built to take advantage of all the great work done by the web development community.
 * **Hosting you know.** Xip bots are Rack applications. That means your bots can be [deployed](https://hellostealth.org/docs/#deployment) using familiar services like Docker and Heroku.
-* **Ready for production.** Xip already powers bots for large, well-known brands. So your next bot project is in good hands.
+* **Ready for production.** Xip already powers bots for large, well-known brands. You can rest assured your bot will be in good hands with Xip.
 * **Open source.** Xip Kit is MIT licensed to ensure you own your bot. More importantly, we welcome contributors to help make Xip even better for everyone.
 
