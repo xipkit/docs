@@ -1,7 +1,8 @@
 ---
 description: >-
   Xip Kit includes everything you need to build amazing conversational bots with
-  tools you know and love.
+  tools you know and love. From two-way SMS-based bots to Alexa Skills, Xip Kit
+  provides the best developer experience.
 ---
 
 # Intro
@@ -23,7 +24,13 @@ In addition to being inspired by Model-View-Controller \(MVC\) pattern, Xip as a
 * **Plug and play components.** Every service integration in Xip is a Ruby gem. One bot can support multiple [me](https://hellostealth.org/docs/#messaging_integrations)ssaging platforms \(i.e. Facebook Messenger, SMS, Alexa, and more\) and multiple NLP/NLU services.
 * **Innovative.** Xip is constantly improving and evolving. There are many innovations in Xip such as: interrupt detection, homophone detection, hot-code reloading, multi-level catch-all handling, and more that make your bots perform better.
 * **Advanced tooling.** From web servers to continuous integration testing, Xip is built to take advantage of all the great work done by the web development community.
-* **Hosting you know.** Xip bots are Rack applications. That means your bots can be [deployed](https://hellostealth.org/docs/#deployment) using familiar services like Docker and Heroku.
+* **Hosting you trust.** Xip bots are Rack applications. That means your bots can be [deployed](https://hellostealth.org/docs/#deployment) using familiar services like Docker and Heroku.
 * **Ready for production.** Xip already powers bots for large, well-known brands. You can rest assured your bot will be in good hands with Xip.
-* **Open source.** Xip Kit is MIT licensed to ensure you own your bot. More importantly, we welcome contributors to help make Xip even better for everyone.
+* **Open source.** Xip Kit is MIT licensed to ensure you own your bot's source code. More importantly, we welcome contributors to help make Xip even better for everyone.
+
+## Prerequisites
+
+While it's helpful to have some familiarity with Ruby, we think you can get started with Xip without yet knowing Ruby. Building text-based bots or Alexa Skills is a great starting point into the world of programming and we think Ruby is an excellent first \(or last!\) programming language.
+
+We welcome contributors and questions from programmers of all experience levels.
 
