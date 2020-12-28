@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Xip Kit](README.md)
+* [Intro](README.md)
 

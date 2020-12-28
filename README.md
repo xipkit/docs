@@ -4,7 +4,7 @@ description: >-
   tools you know and love.
 ---
 
-# Xip Kit
+# Intro
 
 ![](.gitbook/assets/logo.svg)
 
