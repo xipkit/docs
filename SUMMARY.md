@@ -9,6 +9,7 @@
   * [Tunnels](dev-environment/tunnels.md)
   * [Environment Variables](dev-environment/environment-variables.md)
   * [Logs](dev-environment/logs.md)
+* [Glossary](glossary.md)
 
 ## Flows
 
