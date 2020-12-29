@@ -103,3 +103,9 @@ class QuotesController < BotController
 end
 ```
 
+## Failing to Progress a User
+
+One of the primary responsibilities of a controller is to update a user's session. The other responsibility is sending replies to a user. If you fail to do either of these things, essentially the user at the other end won't have any feedback.
+
+If a controller action fails to update the state or send any replies, Xip will automatically fire a [CatchAll](catch-alls.md). This is designed to catch errors during development. If you are certain you don't want to send any feedback to the user for a specific action you can call [do\_nothing](sessions/do_nothing.md) to override Xip's default behavior.  
+

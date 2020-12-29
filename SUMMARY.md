@@ -31,6 +31,7 @@
   * [step\_back](controllers/sessions/step_back.md)
   * [do\_nothing](controllers/sessions/do_nothing.md)
 * [route](controllers/route.md)
+* [Available Data](controllers/available-data.md)
 * [handle\_message](controllers/handle_message/README.md)
   * [Exact Match](controllers/handle_message/exact-match.md)
   * [Alpha Ordinals](controllers/handle_message/alpha-ordinals.md)
