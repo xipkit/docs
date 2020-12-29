@@ -14,7 +14,7 @@
 
 ## Flows
 
-* [Flow Overview](flows/overview.md)
+* [Flows & States](flows/overview.md)
 * [State Naming](flows/state-naming.md)
 * [FlowMap](flows/flowmap.md)
 * [State Options](flows/state-options.md)
@@ -28,6 +28,7 @@
   * [step\_to\_in](controllers/sessions/step_to_in.md)
   * [step\_to\_at](controllers/sessions/step_to_at.md)
   * [update\_session\_to](controllers/sessions/update_session_to.md)
+  * [step\_back](controllers/sessions/step_back.md)
   * [do\_nothing](controllers/sessions/do_nothing.md)
 * [route](controllers/route.md)
 * [handle\_message](controllers/handle_message/README.md)
@@ -83,7 +84,8 @@
 
 ## Testing
 
-* [Untitled](testing/untitled.md)
+* [Specs](testing/untitled.md)
+* [Integration Testing](testing/integration-testing.md)
 
 ## Deployment
 
