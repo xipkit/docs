@@ -1,6 +1,6 @@
 # State Options
 
-In your `FlowMap`, each state can also specify certain options. Some options expose  built-in Xip functionality, while others are completely custom and can be referenced by your code.
+In your `FlowMap`, each state may also specify certain options. Some options expose  built-in Xip functionality, while others are completely custom and can be referenced by your code.
 
 ```ruby
 class FlowMap
