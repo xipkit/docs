@@ -11,7 +11,7 @@ description: >-
 
 ## What's Xip Kit?
 
-Xip Kit \(or just Xip\) is an open source, Ruby framework for conversational voice and text chatbots.
+Xip Kit \(or just Xip\) is an open source, ![](.gitbook/assets/ruby.png)Ruby framework for conversational voice and text chatbots.
 
 Xip is inspired by the Model-View-Controller \(MVC\) pattern. However, instead of calling them _Views,_ Xip refers to them as _Replies_ to better match the chatbot domain.
 
