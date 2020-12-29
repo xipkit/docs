@@ -16,6 +16,10 @@ Xip requires Redis. Redis is used for [session storage](controllers/sessions/int
 
 Xip bots can be booted into three environment types: `development`, `testing`, `production`. By default, if an environment is not specified via the `XIP_ENV` environment variable, the `development` environment will be used. The `testing` environment is automatically used when running your specs.
 
+### ActiveSupport
+
+Xip automatically includes [active\_support](https://guides.rubyonrails.org/active_support_core_extensions.html). So if you're used to using certain core extensions in Ruby on Rails, you can continue to use them in your Xip bots!
+
 ## Lifecycle of a Message
 
 This is just a brief outline of the lifecycle of a message to help you understand how Xip processes messages. For more detailed information that you can use to build your own message platform components, check out [those docs](components/message-platforms.md).
