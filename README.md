@@ -17,7 +17,7 @@ Xip is inspired by the Model-View-Controller \(MVC\) pattern. However, instead o
 
 * The [Model](models/overview.md) layer represents your data model \(such as Account, User, Quote, etc.\) and encapsulates the business logic that is specific to your bot. By default, Xip uses [ActiveRecord](models/activerecord.md), but you can use any library that you prefer.
 * The [Controller](controllers/controller-overview.md) layer is responsible for handling incoming requests from messaging platforms and providing and transmitting the response \(reply\).
-* The [Reply](replies/reply-overview.md) layer is composed of “templates” that are responsible for constructing the respective response.
+* The [Reply](replies/reply-overview.md) layer is composed of “templates” that are responsible for constructing the respective reply.
 
 In addition to being inspired by Model-View-Controller \(MVC\) pattern, Xip as a few other awesome things built in for you.
 
