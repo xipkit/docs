@@ -109,3 +109,23 @@ One of the primary responsibilities of a controller is to update a user's sessio
 
 If a controller action fails to update the state or send any replies, Xip will automatically fire a [CatchAll](catch-alls.md). This is designed to catch errors during development. If you are certain you don't want to send any feedback to the user for a specific action you can call [do\_nothing](sessions/do_nothing.md) to override Xip's default behavior.  
 
+## Before/After/Around Filters
+
+Like Ruby on Rails controllers, Xip controllers support `before_action`, `after_action`, and `around_action` filters.
+
+Given a `BotController` that loads a user:
+
+```ruby
+class BotController < Xip::Controller
+
+  before_action :current_user
+  
+  private def current_user
+    @current_user ||= User.find_by_session_id(current_session_id)
+  end
+  
+end
+```
+
+The `current_user` method will be run on all controllers that inherit from BotController. Similarly, if you add a `before_action` to a child controller, only that controller's actions will run the filter.
+
