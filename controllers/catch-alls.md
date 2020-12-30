@@ -76,5 +76,61 @@ For the last Catch-All state, you'll probably want to prompt the user to contact
 
 ### Catch-All Reasons
 
-As mentioned in the [Triggering](catch-alls.md#triggering) section above, there are two reasons a Catch-All might trigger. Xip 
+As mentioned in the [Triggering](catch-alls.md#triggering) section above, there are two reasons a Catch-All triggers. Xip will provide the `CatchAllsController` with that reason so you can customize your messages and take the appropriate action.
+
+So if for example your bot just didn't recognize the message sent by the user, you may ask the user to repeat. If however, your database is down, you might other action.
+
+Here is an example usage:
+
+```ruby
+class CatchAllsController < BotController
+  
+  before_action :set_catch_all_reason
+
+  def level1
+    send_catch_all_replies('level1')
+
+    if fail_session.present?
+      step_to session: fail_session, pos: -1
+    else
+      step_to session: previous_session - 2.states, pos: -1
+    end
+  end
+
+  def level2
+    send_catch_all_replies('level2')
+  end
+
+  def level3
+    send_catch_all_replies('level3')
+  end
+
+  private
+
+  def fail_session
+    previous_session.flow.current_state.fails_to
+  end
+
+  def send_catch_all_replies(level)
+    if @reason == :unrecognized_message
+      send_replies(custom_reply: "catch_alls/#{level}_unrecognized")
+    else
+      send_replies(custom_reply: "catch_alls/#{level}")
+    end
+  end
+
+  def set_catch_all_reason
+    @reason = case current_message.catch_all_reason[:err].to_s
+    when 'Xip::Errors::UnrecognizedMessage'
+      :unrecognized_message
+    else
+      :system_error
+    end
+  end
+
+end
+
+```
+
+In this `CatchAllsController` we have two sets of Catch-All replies. One for when the message was unrecognized and another for when we've encountered a system error. We dynamically send the appropriate reply based on the `@reason` instance variable that we set with the `before_action` in the controller.
 
