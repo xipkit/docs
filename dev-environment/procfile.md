@@ -17,7 +17,7 @@ If you're not familiar with Procfiles, each line specifies a process name and co
 
 Currently, Xip uses Sidekiq for processing background jobs. It is configured to monitor 2 queues by default: `xip_webhooks` and `xip_replies`. You can specify additional queues as needed by your bot by adding `-q <queue_name>` to the `sidekiq` Procfile entry.
 
-{% hint style="info" %}
+{% hint style="success" %}
 You can even use Sidekiq Pro and Sidekiq Enterprise if you have a license
 {% endhint %}
 

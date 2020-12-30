@@ -39,8 +39,8 @@ To add the file `lib/some_file.rb` to the `autoload_path`, add this line to `con
 Xip.config.autoload_paths << File.join(Xip.root, 'lib', 'some_file')
 ```
 
-{% hint style="info" %}
-You don't need to include the `.rb` extension to the filename.
+{% hint style="warning" %}
+Don't include the `.rb` extension to the filename.
 {% endhint %}
 
 #### Adding a Directory

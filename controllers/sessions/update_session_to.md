@@ -2,7 +2,7 @@
 
 Similar to [step\_to](step_to.md), `update_session_to` is used to update the user's session to a flow and state. It also accepts the same arguments. However, `update_session_to` does not immediately call the respective controller action. `update_session_to` is typically used after an `ask` action where the next action is waiting for user input. It allows you to set the state that will be responsible for handling that user input, like a `get` action.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 If the flow and/or action specified in the `update_session_to` is not declared in the [FlowMap](../../flows/flowmap.md), Xip will raise an exception.
 {% endhint %}
 

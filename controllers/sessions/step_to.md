@@ -2,7 +2,7 @@
 
 The `step_to` method is used to update the session and immediately move the user to the specified flow and state. `step_to` can accept a _flow_, a _state_, or both. `step_to` is often used after a `say` action where the next action typically doesn't require user input.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 If the flow and/or action specified in the `step_to` is not declared in the [FlowMap](../../flows/flowmap.md), Xip will raise an exception.
 {% endhint %}
 

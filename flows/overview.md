@@ -26,7 +26,7 @@ A **flow** is the term used to describe a complete interaction between a user an
 
 For example, if a user is using your bot to receive an insurance quote, the flow might be named `quote`. 
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Xip requires that flows be named in the singular form, like Ruby on Rails.
 {% endhint %}
 

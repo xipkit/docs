@@ -6,7 +6,7 @@ The `step_to_at` method is used to update the session and move the user to the s
 The session will only be updated and the controller action called **at the time specified**.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="warning" %}
 If the flow and/or action specified in the `step_to_at` is not declared in the [FlowMap](../../flows/flowmap.md) \(at the specified date and time\), Xip will raise an exception.
 {% endhint %}
 

@@ -2,7 +2,7 @@
 
 Used in conjunction with `set_back_to`, `step_back` will step the user to the flow and state specified by `set_back_to`. This is a useful feature when you're building shared flows. Like for example, if you ask a user for their name in multiple places throughout your bot. This allows you to keep your flows [DRY](https://en.m.wikipedia.org/wiki/Don%27t_repeat_yourself).
 
-{% hint style="info" %}
+{% hint style="warning" %}
 If a `back_to` session has not been set before `step_back` is called, Xip will raise a `Xip::Errors::InvalidStateTransition` exception.
 {% endhint %}
 

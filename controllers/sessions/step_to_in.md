@@ -6,7 +6,7 @@ The `step_to_in` method is used to update the session and move the user to the s
 The session will only be updated and the controller action called **after the specified duration has elapsed**.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="warning" %}
 If the flow and/or action specified in the `step_to_in` is not declared in the [FlowMap](../../flows/flowmap.md) \(after the specified duration\), Xip will raise an exception.
 {% endhint %}
 

@@ -20,7 +20,7 @@ If a user has not interacted with your bot before, the key will therefore be `ni
 
 By default, sessions do not expire. This is however configurable as a [setting](../../config/settings.md).
 
-{% hint style="info" %}
+{% hint style="warning" %}
 If your bot sends re-engagements, make sure your session's expiration is set to be _after_ the last re-engagement message is sent.
 {% endhint %}
 

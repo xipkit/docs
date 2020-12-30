@@ -46,7 +46,7 @@ The user's session is accessible via `current_session`. This is a `Xip::Session`
 
 `==`: Compare two sessions and returns `true` if they point to the same flow and state and `false` if they do not.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Use the session arithmetic operators \(`+` and `-`\) sparingly. They are primarily designed for use in [Catch](catch-alls.md)[Alls](catch-alls.md) when a `fails_to` state has not been specified.
 {% endhint %}
 
