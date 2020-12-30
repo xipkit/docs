@@ -17,7 +17,7 @@ def get_call_response
 end
 ```
 
-In this example, the `handle_message` method has four different "match arms". Each arm is just `key => value` pair since it's all  just a hash. The keys are the `match expressions`. The values are `procs` that serve as the action to take if the match arm is matched.
+In this example, the `handle_message` method has four different "match arms". Each arm is just `key => value` pair since it's all  just a hash. The keys are the `match expressions`. The values are `procs` that serve as the action to take if the match expression is matched.
 
 Xip accepts match expressions in five different ways:
 
@@ -30,4 +30,26 @@ Xip accepts match expressions in five different ways:
 {% hint style="info" %}
 The `procs` can be multi-line and thus perform more than one action. In the docs for the match expressions we'll include some of those examples.
 {% endhint %}
+
+## Proc Scope
+
+If you are new to Ruby, you might be wondering about `procs`. You can think of them as anonymous functions from Javascript or closures. 
+
+The code inside of the `proc` is executed if the match expression is matched. That code has access to the same variables as the containing method's scope. So for example:
+
+```ruby
+def get_response
+  x = 15
+  handle_message(
+    'Buy' => proc { 
+      x += 1 
+    },
+    'Refinance' => proc { 
+      x += 2 
+    }
+  )
+end
+```
+
+In this example if a user sends the message "Buy", the value of `x` will be `16`. Similarly, if the user sends the message "Refinance", the value of `x` will be `17`.
 
