@@ -1,6 +1,6 @@
 # handle\_message
 
-The `handle_message` method is one of the most fundamental controller methods in Xip. It enables you to succinctly handle messages without needing long `if/else` or `case` statements. 
+The `handle_message` method is one of the most fundamental controller methods in Xip. It enables you to succinctly handle messages without needing long `if/else` or `case` statements.
 
 ## Example
 
