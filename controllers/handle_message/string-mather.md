@@ -1,6 +1,6 @@
 # String Matcher
 
-The string matcher matches exact string responses. It will however automatically ignore case and also blank padding preceding and trailing a string. These blank spaces occur frequently with texting apps and autocomplete.
+The string matcher matches exact string responses. It will however automatically ignore case and also ignore blank padding preceding and trailing a string. These blank spaces occur frequently with texting apps and autocomplete.
 
 ## Example
 
