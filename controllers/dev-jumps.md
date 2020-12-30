@@ -2,7 +2,7 @@
 
 Dev Jumps are a feature of Xip that makes you and your team more productive during development. It enables you to jump between flows and states while interacting with your bot. As you develop your bot, you can avoid having to restart the conversation each time.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Dev Jumps will only work while your bot is in the `development` environment.
 {% endhint %}
 
