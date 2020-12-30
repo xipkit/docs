@@ -25,7 +25,7 @@ def get_response
 end
 ```
 
-If a user enters the letter "b", then the "Blue" match arm will automatically be selected as expected. However, Xip will also natively accept the input "be" and "bee" from the user and the "Blue" match arm will also be selected. Similarly, "see" and "sea" will select the "Green" match arm.
+If a user enters the letter "b", then the "Blue" match arm will automatically be selected as expected. However, Xip will also natively accept the input "be" and "bee" from the user and the "Blue" match arm will still be selected. Similarly, "see" and "sea" will select the "Green" match arm.
 
 {% hint style="info" %}
 For a full list of homophones Xip detects, you can inspect the array constant `Xip::Controller::Messages::HOMOPHONES`
