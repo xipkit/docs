@@ -16,7 +16,7 @@ description: >-
 * **NLU** - A subclass of NLP. More aptly describes the type of NLP you'll want to perform with Xip, but NLP is the more commonly used term.
 * **session** - Sessions allow your Xip bot to recognize subsequent messages from users. It keeps track of where in the conversation each of your users currently reside.
 * **MVC** - A software design pattern. It's not critical to understand this to get going, but if you're interested you can learn more [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiGt_XpzPHtAhXNVc0KHWjiDG8QFjAAegQIBRAC&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FModel%25E2%2580%2593view%25E2%2580%2593controller&usg=AOvVaw1wpuCUJRz1WxG51eRibnYX).
-* **intent** - ****Intents are one of the main things NLP components extract from a message. They are a type of classification. We talk about them in more detail in the `handle_message` [docs](controllers/handle_message/nlp-nlu.md).
+* **intent** - ****Intents are one of the main things NLP components extract from a message. They are a type of classification. We talk about them in more detail in the `handle_message` [docs](controllers/handle_message/nlp-matcher.md).
 * **entity** - Entities are individual tokens within a message that an NLP component will extract. So for example, a number or some other trained entity specific to your bot \(like car models and makes\). More info about these can be found in the `get_match` [docs](controllers/get_match/entity-match.md).
-* **regex** - A regular expression. These are a programming concept used in string matching. In Xip, these are most often used in `handle_message` and there are [docs](controllers/handle_message/regex.md) for their usage.
+* **regex** - A regular expression. These are a programming concept used in string matching. In Xip, these are most often used in `handle_message` and there are [docs](controllers/handle_message/regex-matcher.md) for their usage.
 
