@@ -95,6 +95,6 @@
 
 ## Components
 
-* [Message Platforms](components/message-platforms.md)
+* [Message Services](components/message-services.md)
 * [NLP](components/nlp.md)
 

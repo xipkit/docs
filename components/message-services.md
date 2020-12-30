@@ -2,7 +2,7 @@
 description: Guide to creating your own message platform component.
 ---
 
-# Message Platforms
+# Message Services
 
 ## Coming Soon...
 
