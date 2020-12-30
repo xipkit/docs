@@ -16,7 +16,7 @@ def get_response
 end
 ```
 
-In this example, if a user types in `SURE` or `SuRE`    or `sure`, it will all match the first match arm and the corresponding proc will be run.
+In this example, if a user types in `SURE` or `SuRE`    or `sure`, it will match the first match arm and the corresponding proc will be executed.
 
 {% hint style="warning" %}
 If none of the match expressions are matched, Xip will raise a `Xip::Errors::UnrecognizedMessage` exception unless the [nil matcher](nil-matcher.md) is included.
