@@ -38,3 +38,11 @@ step_to flow: :hello, state: :say_hello
 
 Sets the session's flow to `hello` and the state to `say_hello`. The `say_hello` controller action of the `HellosController` controller will also be immediately called.
 
+## Session Example
+
+```ruby
+update_session_to session: previous_session
+```
+
+Sets the session to the `previous_session` and but does **not** call the respective controller action. This is useful for updating a user's session to the previous value.
+
