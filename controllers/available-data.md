@@ -24,6 +24,8 @@ The current message being processed is available via `current_message`. This is 
 
 `nlp_result`: The raw result of the NLP performed on this message. This will vary per NLP component.
 
+`catch_all_reason`: This is a hash that contains two keys: `:err` and `:err_msg`. The `:err` key is a string of the exception class that was raised and the `:err_msg` is the message associated with that exception. See [Catch-All Reasons](catch-alls.md#catch-all-reasons) for more info.
+
 `location`: This will vary per message service component. 
 
 `attachments`: This will vary per message service component. 

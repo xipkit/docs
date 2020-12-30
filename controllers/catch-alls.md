@@ -74,3 +74,7 @@ If a user has encountered the maximum number of CatchAll levels that have been d
 For the last Catch-All state, you'll probably want to prompt the user to contact support or send them to a special menu to choose from.
 {% endhint %}
 
+### Catch-All Reasons
+
+As mentioned in the [Triggering](catch-alls.md#triggering) section above, there are two reasons a Catch-All might trigger. Xip 
+
