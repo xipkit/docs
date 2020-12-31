@@ -127,5 +127,5 @@ class BotController < Xip::Controller
 end
 ```
 
-The `current_user` method will be run on all controllers that inherit from `BotController`. Similarly, if you add a `before_action` to a child controller, only that controller's actions will run the filter.
+The `current_user` method will be run on all controllers that inherit from `BotController`. Similarly, if you add a `before_action` to a child controller, only that controller's actions will run that filter.
 
