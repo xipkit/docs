@@ -22,7 +22,7 @@ Xip automatically includes [active\_support](https://guides.rubyonrails.org/acti
 
 ## Lifecycle of a Message
 
-This is just a brief outline of the lifecycle of a message to help you understand how Xip processes messages. For more detailed information that you can use to build your own message platform components, check out [those docs](components/message-services.md).
+This is just a brief outline of the lifecycle of a message to help you understand how Xip processes messages. For more detailed information that you can use to build your own message platform components, check out [those docs](building-components/message-services.md).
 
 1. A message is received by the web server.
 2. If the message platform supports it, the message is backgrounded to be processed by a background job. If the message platform does not support it \([Alexa Skill](platforms/alexa-skills.md) or [Voice](platforms/voice.md)\), the message is processed inline by the web server process.
