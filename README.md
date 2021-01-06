@@ -7,7 +7,7 @@ description: >-
 
 # Intro
 
-![](.gitbook/assets/logo.svg)
+![](.gitbook/assets/logo-light.svg)
 
 ## What's Xip Kit?
 
